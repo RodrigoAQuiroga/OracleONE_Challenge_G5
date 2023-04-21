@@ -12,7 +12,7 @@ function encriptar() {
 
     if (msgResult == false) {
         document.getElementById("resultadosEncriptado").innerHTML = "La oración no puede ser encriptada";
-        document.getElementById("secondtextImg").innerHTML = "Recuerde que la oración a encriptar no puede contener mayusculas, números o simbolos";
+        document.getElementById("secondtextImg").innerHTML = "Recuerde que la oración a encriptar no puede contener mayúsculas, números o simbolos";
     } else {
 
         let txto = msg.replace(/e/img, cifra.e[0]).replace(/i/img, cifra.i[0]).replace(/a/img, cifra.a[0]).replace(/o/img, cifra.o[0]).replace(/u/img, cifra.u[0]);
@@ -36,7 +36,7 @@ function desencriptar() {
 
     if (msgResult == false) {
         document.getElementById("resultadosEncriptado").innerHTML = "La oración no puede ser desencriptada";
-        document.getElementById("secondtextImg").innerHTML = "Recuerde que la oración a desencriptar no puede contener mayusculas, números o simbolos";
+        document.getElementById("secondtextImg").innerHTML = "Recuerde que la oración a desencriptar no puede contener mayúsculas, números o simbolos";
     } else {
 
         let txto = msg.replace(/enter/img, cifra.e[1]).replace(/imes/img, cifra.i[1]).replace(/ai/img, cifra.a[1]).replace(/ober/img, cifra.o[1]).replace(/ufat/img, cifra.u[1]);
