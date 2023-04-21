@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="scripts/script.js">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+
+    <title>Encriptador: ONE_Challenge</title>
+</head>
+
+<body>
+
+    <main>
+
+        
+
+        <section class="logo encriptador col-8">
+            <img src="res/Logo.png" alt="Logo de Alura" id="logo">
+
+
+            <h3 id="msgTitle">Ingrese su Texto Aquí</h3>
+
+            <input type="text" class="txt" id="write"
+                placeholder="escriba sólo una oración" >
+
+            <div class="botones">
+                <img src="res/bi_exclamation-circle-fill.png" alt="Atención" style="padding: 0;">
+                <span>Solamente palabras en minúsculas, sin acentos, números, ni simbolos.</span>
+                <br>
+                <br>
+                <button onclick="encriptar()" id="toEncrypt">Encriptar</button>
+                <button onclick="desencriptar()" id="toDecrypt">Desencriptar</button>
+            </div>
+
+        </section>
+
+
+        <section class="col-4 desencriptador">
+            <div class="imagen">
+                <div id="img">
+                    <img src="res/Muñeco.png" id="girlImg" alt="Chica con lupa que esta por descubrir algo">
+                </div>
+                <div class="textImg">
+                    <p id="resultadosEncriptado">Ningún mensaje fue encontrado</p>
+                </div>                
+             
+                <p id="secondtextImg">Ingrese el texto que desee encriptar o desencriptar</p>
+                <button id="copiar" onclick="copiar()">Copiar el mensaje</button>
+         
+             
+
+            </div>
+
+
+        </section>
+
+   
+
+    </main>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
